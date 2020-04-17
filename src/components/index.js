@@ -7,6 +7,7 @@ import {makeStyles} from '@material-ui/styles';
 const useStyles = makeStyles({
     particlesCanva: {
         position: "absolute",
+        opacity: 0.6
 
     }
 })
@@ -15,7 +16,7 @@ const Home = () => {
     return (
         <>
             
-            <NavBar />
+            <NavBar title= "Home"/>
             <Header />
             <Particles canvasClassName = {classes.particlesCanva}
                 params ={{
@@ -31,7 +32,28 @@ const Home = () => {
                             type: "circle",
                             stroke: {
                                 width :1 ,
-                                color: "#dbdbdb"
+                                color: "#B83B5E"
+                            }
+                        },
+                        size: {
+                            value : 8 ,
+                            random: true,
+                            anim: {
+                                enable: true,
+                                speed: 10,
+                                size_min: 0.1,
+                                sync: true
+                            }
+                        },
+                        opacity:{
+                            value:1,
+                            random: true,
+                            anim:{
+                                enable: true,
+                                speed:1,
+                                opacity_min: 0.1,
+                                sync: true
+
                             }
                         }
 

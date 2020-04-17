@@ -39,7 +39,7 @@ const Header = () =>{
             </Grid>
             
             <Typography className={classes.title} variant="h4">
-                Min Thiha Maung
+                Tony Maung
             </Typography>
             
             <br/>
